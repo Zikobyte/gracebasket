@@ -2,19 +2,22 @@
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Grace Basket 2026
 
-This contains everything you need to run your app locally.
+Grace Basket 2026 is a static React site built with Vite.
 
-View your app in AI Studio: https://ai.studio/apps/7f355205-81ed-48be-82b4-5e326cd0bb5b
+## Run locally
 
-## Run Locally
+**Prerequisites:** Node.js 22.12.0 or later and npm
 
-**Prerequisites:**  Node.js
+1. Install dependencies with `npm install`.
+2. Start the development server with `npm run dev`.
+3. Create a production build with `npm run build`.
 
+## Deploy to Vercel
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Import this repository into Vercel and select the repository root as the root directory.
+2. Vercel uses the included `vercel.json` to build with `npm run build`, publish `dist`, and serve the app entry point for client-side routes.
+3. Deploy. The current site does not require environment variables.
+
+The site is a static frontend; it does not run an Express server or call Gemini from the browser. Do not add private API keys as `VITE_*` variables, since Vite embeds those values in public client-side assets.
