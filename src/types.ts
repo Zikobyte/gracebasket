@@ -11,13 +11,6 @@ export interface DonationTier {
   basketContents: string[];
 }
 
-export interface FaithPillar {
-  id: string;
-  title: string;
-  description: string;
-  icon: 'cross' | 'heart' | 'gift' | 'users' | 'sparkles';
-}
-
 export interface BankAccountDetails {
   bankName: string;
   accountName: string;

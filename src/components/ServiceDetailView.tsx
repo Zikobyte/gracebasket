@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, CheckCircle2, Copy, Check, Heart, ShieldCheck } from 'lucide-react';
+import React from 'react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Heart } from 'lucide-react';
 import { DonationTier } from '../types';
-import { BANK_DETAILS } from '../data';
 
 interface ServiceDetailViewProps {
   tier: DonationTier;
@@ -14,14 +13,6 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
   onBackToHome,
   onDonateClick,
 }) => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyAccount = () => {
-    navigator.clipboard.writeText(BANK_DETAILS.accountNumber);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
-
   return (
     <div className="min-h-screen bg-white text-[#0B192C] pb-24">
       {/* Top Navigation Bar with Home button */}
@@ -80,14 +71,14 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
           {/* Left Details */}
           <div className="md:col-span-7">
             <h3 className="text-2xl font-black text-[#0B192C] mb-3 tracking-tight">
-              Food Basket Contents & Impact
+              Your Food Basket Sponsorship
             </h3>
             <p className="text-slate-600 leading-relaxed mb-6 text-sm sm:text-base">
               {tier.description}
             </p>
 
             <h4 className="text-xs uppercase tracking-wider font-extrabold text-[#0B192C]/70 mb-3">
-              Included in this Christmas Food Package:
+              What Your Sponsorship Supports:
             </h4>
             <div className="space-y-2.5">
               {tier.basketContents?.map((item, idx) => (
@@ -98,13 +89,9 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
               ))}
             </div>
 
-            <div className="mt-6 flex items-center gap-2 text-xs text-slate-500 font-medium">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Full transparency with distribution photos and video reports provided.</span>
-            </div>
           </div>
 
-          {/* Right Direct Payment Box */}
+          {/* Payment details are available in the payment modal. */}
           <div className="md:col-span-5 bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
             <div>
               <span className="text-[11px] uppercase tracking-wider text-[#0B192C] font-extrabold bg-[#D4AF37]/30 px-2.5 py-1 rounded-md">
@@ -114,49 +101,16 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
                 {tier.amount}
               </h4>
               <p className="text-xs text-slate-600 mb-4">
-                Sponsors {tier.families} with complete food packages for Christmas 2026.
+                Supports {tier.families} with the same standard Christmas food hamper for each family.
               </p>
-
-              {/* Bank Details Snippet */}
-              <div className="bg-white rounded-xl p-3.5 border border-slate-200 shadow-2xs mb-5 text-xs space-y-1.5">
-                <div className="flex justify-between">
-                  <span className="text-slate-500">Bank:</span>
-                  <span className="font-bold text-[#0B192C]">{BANK_DETAILS.bankName}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-slate-500">Account:</span>
-                  <span className="font-bold text-[#0B192C] text-right">{BANK_DETAILS.accountName}</span>
-                </div>
-                <div className="flex justify-between items-center pt-1 border-t border-slate-100">
-                  <span className="text-slate-500">Number:</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="font-mono font-black text-[#0B192C]">{BANK_DETAILS.accountNumber}</span>
-                    <button
-                      onClick={handleCopyAccount}
-                      className="bg-[#D4AF37] hover:bg-[#c49f2b] text-[#0B192C] px-1.5 py-0.5 rounded text-[10px] font-bold cursor-pointer"
-                    >
-                      {copied ? 'Copied!' : 'Copy'}
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <button
-              onClick={handleCopyAccount}
+              onClick={onDonateClick}
               className="w-full bg-[#D4AF37] hover:bg-[#c49f2b] text-[#0B192C] font-black text-sm py-3.5 px-5 rounded-full flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 cursor-pointer"
             >
-              {copied ? (
-                <>
-                  <Check className="w-4 h-4 stroke-[3]" />
-                  <span>Account Number Copied!</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-4 h-4" />
-                  <span>Copy Bank Details to Transfer</span>
-                </>
-              )}
+              <ArrowRight className="w-4 h-4" />
+              <span>View Payment Details</span>
             </button>
           </div>
         </div>

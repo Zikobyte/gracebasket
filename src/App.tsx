@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
-import { WhyChooseUsSection } from './components/WhyChooseUsSection';
 import { ServiceDetailView } from './components/ServiceDetailView';
 import { Footer } from './components/Footer';
 import { Modal } from './components/Modals';
@@ -14,13 +13,13 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('home');
   const [selectedTier, setSelectedTier] = useState<DonationTier | null>(null);
 
-  // Account Details Modal states (strictly bank transfer details, NO forms)
+  // Payment details are shown in a modal rather than on the page.
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState('Sponsor a Food Basket — Account Details');
+  const [modalTitle, setModalTitle] = useState('Sponsor a Food Basket — Payment Details');
   const [modalSelectedAmount, setModalSelectedAmount] = useState<string | undefined>(undefined);
 
   const openAccountDetailsModal = (title?: string, amount?: string) => {
-    setModalTitle(title || 'Sponsor a Food Basket — Account Details');
+    setModalTitle(title || 'Sponsor a Food Basket — Payment Details');
     setModalSelectedAmount(amount);
     setModalOpen(true);
   };
@@ -36,12 +35,6 @@ export default function App() {
     } else if (tab === 'donation-tiers') {
       setSelectedTier(null);
       document.getElementById('donation-tiers')?.scrollIntoView({ behavior: 'smooth' });
-    } else if (tab === 'account-details') {
-      setSelectedTier(null);
-      document.getElementById('account-details')?.scrollIntoView({ behavior: 'smooth' });
-    } else if (tab === 'promises') {
-      setSelectedTier(null);
-      document.getElementById('promises')?.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -71,18 +64,15 @@ export default function App() {
             onDonateClick={() => openAccountDetailsModal('Sponsor a Food Basket for Christmas 2026', '₦30,000')}
           />
 
-          {/* Hero Section with 2 prominent CTAs directly accessing Account Details */}
+          {/* Hero section with sponsorship and payment-details actions */}
           <Hero
             onDonateClick={() => openAccountDetailsModal('Sponsor a Food Basket for Christmas 2026', '₦30,000')}
-            onViewAccountDetails={() => handleSelectTab('account-details')}
+            onViewAccountDetails={() => openAccountDetailsModal('Payment Details')}
           />
 
-          {/* About Section: Fulfil Christ's Mandate & Help More Families */}
+          {/* About section: Christ's mandate and the three guiding principles */}
           <AboutSection
             onDonateClick={() => openAccountDetailsModal('Sponsor a Food Basket', '₦30,000')}
-            onLearnMoreClick={() => {
-              document.getElementById('promises')?.scrollIntoView({ behavior: 'smooth' });
-            }}
           />
 
           {/* How Your Donation Helps (Donation Tiers Showcase) */}
@@ -93,11 +83,6 @@ export default function App() {
             }}
           />
 
-          {/* Inherit His Promises & Account Details Section (White Background above Footer) */}
-          <WhyChooseUsSection
-            onDonateClick={() => openAccountDetailsModal('Sponsor a Food Basket via Bank Transfer')}
-          />
-
           {/* Simple Footer (Colored Midnight Blue Background) */}
           <Footer
             onSelectTab={handleSelectTab}
@@ -106,7 +91,7 @@ export default function App() {
         </main>
       )}
 
-      {/* Strictly Bank Account Details Dialog (NO forms, pure account details with copy tool) */}
+      {/* Payment details dialog */}
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}

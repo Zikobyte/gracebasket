@@ -69,22 +69,6 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab, onDonateClick }) =>
                   How Your Donation Helps
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => onSelectTab('account-details')}
-                  className="hover:text-[#D4AF37] transition-colors cursor-pointer text-left"
-                >
-                  Account Details
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onSelectTab('promises')}
-                  className="hover:text-[#D4AF37] transition-colors cursor-pointer text-left"
-                >
-                  Inherit His Promises
-                </button>
-              </li>
             </ul>
           </div>
 
@@ -95,12 +79,8 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab, onDonateClick }) =>
                 Sponsor a Food Basket
               </h4>
               <p className="text-xs text-slate-300 mb-3">
-                Direct transfers can be made to Zenith Bank PLC (Acct: 1018923481).
+                Choose a sponsorship package to view payment details in the pop-up.
               </p>
-              <div className="bg-white/10 border border-white/15 rounded-xl p-3 text-xs text-slate-200 mb-4">
-                <span className="font-bold text-[#D4AF37]">₦30,000 = 1 Family</span> | 
-                <span className="font-bold text-[#D4AF37] ml-1">₦150,000 = 5 Families</span>
-              </div>
             </div>
 
             <button

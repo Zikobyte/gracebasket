@@ -121,7 +121,7 @@ export const Modal: React.FC<AccountModalProps> = ({
 
         <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold mb-6">
           <ShieldCheck className="w-4 h-4 shrink-0" />
-          <span>100% of proceeds go directly to food hampers and community distribution.</span>
+          <span>Your gift supports Grace Basket’s Christmas food outreach.</span>
         </div>
 
         {/* Action Button: Copy & Done */}

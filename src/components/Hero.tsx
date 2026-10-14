@@ -42,7 +42,7 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
           ))}
 
-          {/* Reduced Intensity Blue Overlay: Midnight Blue (#0B192C) with soft gradient */}
+          {/* Reduced-intensity blue overlay with a soft gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B192C]/75 via-[#0B192C]/40 to-black/25 pointer-events-none z-2" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B192C]/80 via-transparent to-[#0B192C]/30 pointer-events-none z-2" />
         </div>
@@ -78,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
         </div>
 
-        {/* Bottom Hero Area: Replacing the two left cards with Two CTAs as requested */}
+        {/* Bottom hero area: sponsorship actions and a concise hamper summary */}
         <div className="relative z-10 pt-10 sm:pt-14 md:pt-16 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6">
           {/* Two Prominent CTA Buttons (replacing previous two cards) */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full lg:w-auto">
@@ -107,7 +107,7 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Right Floating Subtext */}
           <div className="max-w-sm w-full lg:w-auto text-left lg:text-right">
             <p className="text-slate-100 text-xs sm:text-sm md:text-base leading-relaxed drop-shadow">
-              100% of your gift directly buys grain hampers, turkey portions, and vegetable oils for Christmas.
+              Every sponsored family receives the same standard Christmas food hamper.
             </p>
           </div>
         </div>

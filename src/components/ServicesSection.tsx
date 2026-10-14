@@ -15,7 +15,7 @@ export const ServicesSection: React.FC<DonationTiersSectionProps> = ({
 
   return (
     <section id="donation-tiers" className="py-14 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto bg-white">
-      {/* Centered Heading */}
+      {/* Centred heading */}
       <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
         <span className="inline-block px-3.5 py-1 rounded-full bg-[#0B192C]/10 border border-[#0B192C]/20 text-[#0B192C] text-xs font-black tracking-wide mb-4">
           How Your Donation Helps
@@ -25,7 +25,7 @@ export const ServicesSection: React.FC<DonationTiersSectionProps> = ({
           <br className="hidden sm:inline" /> for Christmas 2026
         </h2>
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-          Your gift goes towards feeding people this Christmas who might otherwise go unfed. Every amount is prayerfully deployed.
+          God never forgets your labour of love.
         </p>
       </div>
 

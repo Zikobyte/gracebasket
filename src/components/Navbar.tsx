@@ -27,8 +27,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'home', label: 'Home' },
     { id: 'mandate', label: 'Our Mandate' },
     { id: 'donation-tiers', label: 'How Your Gift Helps' },
-    { id: 'account-details', label: 'Account Details' },
-    { id: 'promises', label: 'His Promises' },
   ];
 
   const handleNavClick = (tabId: string) => {
@@ -158,12 +156,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               onClick={() => {
-                handleNavClick('account-details');
+                onDonateClick();
+                setMobileMenuOpen(false);
               }}
               className="w-full bg-white/10 hover:bg-white/15 text-white font-bold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 border border-white/20 cursor-pointer"
             >
               <Landmark className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>View Bank Transfer Details</span>
+              <span>View Payment Details</span>
             </button>
           </div>
         </div>
