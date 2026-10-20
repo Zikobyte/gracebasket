@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Cross, Heart, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, Cross, Sparkles, Users } from 'lucide-react';
 import { ABOUT_DATA } from '../data';
 
 interface AboutSectionProps {
@@ -38,13 +38,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           </div>
 
           {/* Mandate and guiding principles */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B192C] tracking-tight leading-[1.28] mb-6">
-            Our Mandate: Share the Love of Christ
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B192C] tracking-tight leading-[1.28]">
+            For most of us, Christmas is laughter, a full table, and family. Join us in bringing the good cheer of the season to more families.
           </h2>
-
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
-            Grace Basket shares Christmas food hampers with families, putting Christ’s call to love our neighbours into action.
-          </p>
 
           <div className="flex flex-wrap items-center gap-4 mb-8">
             <button
@@ -71,6 +67,19 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <h3 className="font-bold text-[#0B192C] text-lg">{pillar.title}</h3>
             <p className="text-slate-600 text-sm mt-1 leading-relaxed">{pillar.description}</p>
           </article>
+        ))}
+      </div>
+
+      <div className="mt-10 pt-6 border-t border-slate-200 grid grid-cols-2 gap-8">
+        {ABOUT_DATA.stats.map((stat) => (
+          <div key={stat.label} className="flex flex-col">
+            <span className="text-3xl sm:text-4xl font-black text-[#0B192C] tracking-tight">
+              {stat.value}
+            </span>
+            <span className="text-xs sm:text-sm text-slate-500 font-medium mt-1">
+              {stat.label}
+            </span>
+          </div>
         ))}
       </div>
     </section>

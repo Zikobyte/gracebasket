@@ -22,21 +22,25 @@ export const HERO_DATA = {
 
 export const ABOUT_DATA = {
   badge: "Grace Basket 2026 Mandate",
+  stats: [
+    { value: "2,850+", label: "Families Fed to Date" },
+    { value: "100%", label: "Direct Impact on Feeding" },
+  ],
   image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/4d089a14-3f7e-4f64-9e8b-34d333fd83c0.jpg",
   pillars: [
     {
       title: "Fulfil Christ’s Mandate",
-      description: "Love God and love your neighbour by sharing with families this Christmas.",
+      description: "Share the love that our Saviour has shown to us. He has given us this mandate in the two commandments above all – Love God and Love your neighbour. Your donation to Grace Basket 2026 brings His word to action.",
       icon: "cross",
     },
     {
-      title: "Help More Families",
-      description: "Help bring Christmas food hampers to families in the community.",
+      title: "Help more Families",
+      description: "Christ calls us to care for His brethren, and throughout His ministry, He made sure the people were fed. Help us carry His ministry forward in this season by giving to Grace Basket 2026.",
       icon: "users",
     },
     {
       title: "Inherit His Promises",
-      description: "God never forgets your labour of love (Hebrews 6:10).",
+      description: "God never forgets your labour of love. Every food basket shared is love shown in His name. Bring hope to families, serve diligently, and inherit God’s promises. Join us in faith by donating to Grace Basket 2026.",
       icon: "sparkles",
     },
   ],
@@ -53,7 +57,13 @@ export const DONATION_TIERS: DonationTier[] = [
     tags: ["₦30,000", "1 Family Fed"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/f55688ba-b3ea-4c12-99ce-85814259d3ad.jpg",
     description: "Sponsor one family to receive the standard Grace Basket Christmas food hamper.",
-    basketContents: ["One standard Christmas food hamper for one family"]
+    basketContents: [
+      "10kg Premium Parboiled Rice",
+      "5L Vegetable Cooking Oil",
+      "Beans & Legumes Family Pack",
+      "Festive Chicken / Turkey Portion",
+      "Seasoning Spices, Tomatoes & Salt"
+    ]
   },
   {
     id: "tier-5",
@@ -65,10 +75,7 @@ export const DONATION_TIERS: DonationTier[] = [
     tags: ["₦150,000", "5 Families Fed"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/4d089a14-3f7e-4f64-9e8b-34d333fd83c0.jpg",
     description: "Sponsor five families. Each family receives the same standard Grace Basket Christmas food hamper.",
-    basketContents: [
-      "Five standard Christmas food hampers, one for each family",
-      "On the day intercessory prayer support"
-    ]
+    basketContents: ["5 Full Food Hampers for 5 Distinct Households"]
   },
   {
     id: "tier-10",
@@ -80,9 +87,7 @@ export const DONATION_TIERS: DonationTier[] = [
     tags: ["₦300,000", "10 Families Fed"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/8611cf08-a028-4bf3-9231-02cdd0c69086.jpg",
     description: "Sponsor ten families. Each family receives the same standard Grace Basket Christmas food hamper.",
-    basketContents: [
-      "Ten standard Christmas food hampers, one for each family"
-    ]
+    basketContents: ["10 Abundant Christmas Hampers Given"]
   },
   {
     id: "tier-community",
@@ -94,9 +99,7 @@ export const DONATION_TIERS: DonationTier[] = [
     tags: ["Community Reach", "Major Partner"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/2232ac83-0295-4d3a-8f02-cb86e3cb00f4.jpg",
     description: "Sponsor 20 or more families. Each family receives the same standard Grace Basket Christmas food hamper.",
-    basketContents: [
-      "At least 20 standard Christmas food hampers, one for each family"
-    ]
+    basketContents: ["20 Food Baskets or More"]
   }
 ];
 

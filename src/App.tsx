@@ -7,11 +7,11 @@ import { ServiceDetailView } from './components/ServiceDetailView';
 import { Footer } from './components/Footer';
 import { Modal } from './components/Modals';
 import { CustomCursor } from './components/CustomCursor';
-import { DonationTier } from './types';
+import { DONATION_TIERS } from './data';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('home');
-  const [selectedTier, setSelectedTier] = useState<DonationTier | null>(null);
+  const [showDonationPackages, setShowDonationPackages] = useState(false);
 
   // Payment details are shown in a modal rather than on the page.
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,13 +27,13 @@ export default function App() {
   const handleSelectTab = (tab: string) => {
     setCurrentTab(tab);
     if (tab === 'home') {
-      setSelectedTier(null);
+      setShowDonationPackages(false);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (tab === 'mandate') {
-      setSelectedTier(null);
+      setShowDonationPackages(false);
       document.getElementById('mandate')?.scrollIntoView({ behavior: 'smooth' });
     } else if (tab === 'donation-tiers') {
-      setSelectedTier(null);
+      setShowDonationPackages(false);
       document.getElementById('donation-tiers')?.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -43,16 +43,15 @@ export default function App() {
       {/* Custom Cursor with Grace Basket image that follows the cursor smoothly */}
       <CustomCursor />
 
-      {/* If a tier detail is selected */}
-      {selectedTier ? (
+      {showDonationPackages ? (
         <ServiceDetailView
-          tier={selectedTier}
+          tiers={DONATION_TIERS}
           onBackToHome={() => {
-            setSelectedTier(null);
+            setShowDonationPackages(false);
             setCurrentTab('home');
           }}
-          onDonateClick={() =>
-            openAccountDetailsModal(`Sponsor ${selectedTier.title}`, selectedTier.amount)
+          onDonateClick={(tier) =>
+            openAccountDetailsModal(`Sponsor ${tier.title}`, tier.amount)
           }
         />
       ) : (
@@ -77,8 +76,8 @@ export default function App() {
 
           {/* How Your Donation Helps (Donation Tiers Showcase) */}
           <ServicesSection
-            onSelectTier={(tier) => {
-              setSelectedTier(tier);
+            onOpenPackages={() => {
+              setShowDonationPackages(true);
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           />
