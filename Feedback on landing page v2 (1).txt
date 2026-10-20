@@ -44,9 +44,8 @@ SECTION 3
 SECTION 4
    * We like that information about the donation categories takes people to a sub-page, but please make it one single sub-page for all 4 categories
         I.e replace all of the subsections captured within the RED RECTANGLE below with one subsection that reads: “Choose how you’d like to give: sponsor a single food basket, feed five or ten families, or become a Community Outreach Partner by sponsoring 20 or more hampers.”  
-   * This text can then lead to ONE subpage that hosts information about all 4 categories.  
+   * This text can then lead to ONE sub-page that hosts information about all 4 categories.  
   
-  
 
 
 
@@ -54,7 +53,7 @@ SECTION 4
 
 
 
-FOOD BASKET SUBPAGE 
+FOOD BASKET sub-page 
 All food basket packages will now be on a single page
    *    * Every hamper kit contains the same thing. However, the description on each page makes it appear as if the content when you gift 5 families is different to when you gift 1 family
 Feeding one family (Keep the text below for one family for now; delete “Full transparency with distribution photos and video reports provided”)
@@ -75,3 +74,36 @@ Feeding 10 families (replace “10 Abundant Christmas Hampers Delivered” with 
 
 
 Community partner (Replace “20+ Coordinated Family Food Deliveries” with “20 Food Baskets or More”. Delete “full transparency with distribution photos and video reports provided”
+
+
+  
+  
+
+
+
+
+
+
+
+Further Revision
+SECTION 2
+   * Please increase the space between the subheading and the yellow “sponsor a food basket” button. I have used the green arrow to indicate where.
+  
+  
+
+SECTION 3
+   * Please replace “Choose how you’d like to give: sponsor a single food basket, feed five or ten families, or become a Community Outreach partner by sponsoring 20 or more hampers” with “What’s in a Family Basket?”
+  
+
+
+
+   * Please use the previous layout in the image below for section 3, but do not add the button function. Only the “What’s in a family basket” would be a BUTTON that opens to the SUB-PAGE. Please use the image below as a guide: 
+  
+  
+
+
+
+   * Please replace “1 Food Basket” with “Feed 1 Family”; replace “5 Food Baskets” with “Feed 5 Families; replace “10 Food Baskets” with “Feed 10 Families” in section 3 above.
+FOOD BASKET sub-page
+   * Please replace “Every family receives the same standard Grace Basket Christmas food hamper. Choose a sponsorship option below.” with  “Sponsor one food basket, feed five or ten families, or become a Community Outreach partner by sponsoring 20 or more hampers. Learn where your donation goes below.”
+   *      * Please revert to the Initial layout for the sub-page, as it was before the revision. This time, use only one sub-page that details what one food basket contains. You can use the screenshots I have merged in a similar order. If you still have the old version, feel free to use it, and update the copy with the feedback above.

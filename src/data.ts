@@ -50,7 +50,7 @@ export const DONATION_TIERS: DonationTier[] = [
   {
     id: "tier-1",
     num: "01",
-    title: "1 Food Basket",
+    title: "Feed 1 Family",
     subtitle: "One standard food hamper for one family.",
     amount: "₦30,000",
     families: "1 Family",
@@ -68,7 +68,7 @@ export const DONATION_TIERS: DonationTier[] = [
   {
     id: "tier-5",
     num: "02",
-    title: "5 Food Baskets",
+    title: "Feed 5 Families",
     subtitle: "Five standard food hampers for five families.",
     amount: "₦150,000",
     families: "5 Families",
@@ -80,7 +80,7 @@ export const DONATION_TIERS: DonationTier[] = [
   {
     id: "tier-10",
     num: "03",
-    title: "10 Food Baskets",
+    title: "Feed 10 Families",
     subtitle: "Ten standard food hampers for ten families.",
     amount: "₦300,000",
     families: "10 Families",

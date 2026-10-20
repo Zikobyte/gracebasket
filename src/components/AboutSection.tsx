@@ -38,11 +38,27 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           </div>
 
           {/* Mandate and guiding principles */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B192C] tracking-tight leading-[1.28]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B192C] tracking-tight leading-[1.28] mb-6">
             For most of us, Christmas is laughter, a full table, and family. Join us in bringing the good cheer of the season to more families.
           </h2>
 
-          <div className="flex flex-wrap items-center gap-4 mb-8">
+          <div className="space-y-4">
+            {ABOUT_DATA.pillars.map((pillar) => (
+              <article key={pillar.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <div className="flex items-center gap-3 mb-1.5">
+                  <div className="w-8 h-8 shrink-0 rounded-full bg-[#D4AF37] flex items-center justify-center">
+                    {pillar.icon === 'cross' ? <Cross className="w-4 h-4 text-[#0B192C]" /> :
+                      pillar.icon === 'users' ? <Users className="w-4 h-4 text-[#0B192C]" /> :
+                        <Sparkles className="w-4 h-4 text-[#0B192C]" />}
+                  </div>
+                  <h3 className="font-bold text-[#0B192C]">{pillar.title}</h3>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">{pillar.description}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-4 mt-8">
             <button
               onClick={onDonateClick}
               className="group bg-[#D4AF37] hover:bg-[#c49f2b] text-[#0B192C] font-black text-sm px-6 py-3 rounded-full inline-flex items-center gap-3 transition-all duration-200 shadow-md active:scale-95 cursor-pointer"
@@ -56,21 +72,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         </div>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
-        {ABOUT_DATA.pillars.map((pillar) => (
-          <article key={pillar.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-            <div className="w-10 h-10 rounded-full bg-[#D4AF37] flex items-center justify-center mb-3">
-              {pillar.icon === 'cross' ? <Cross className="w-5 h-5 text-[#0B192C]" /> :
-                pillar.icon === 'users' ? <Users className="w-5 h-5 text-[#0B192C]" /> :
-                  <Sparkles className="w-5 h-5 text-[#0B192C]" />}
-            </div>
-            <h3 className="font-bold text-[#0B192C] text-lg">{pillar.title}</h3>
-            <p className="text-slate-600 text-sm mt-1 leading-relaxed">{pillar.description}</p>
-          </article>
-        ))}
-      </div>
-
-      <div className="mt-10 pt-6 border-t border-slate-200 grid grid-cols-2 gap-8">
+      <div className="mt-12 pt-6 border-t border-slate-200 grid grid-cols-2 gap-8">
         {ABOUT_DATA.stats.map((stat) => (
           <div key={stat.label} className="flex flex-col">
             <span className="text-3xl sm:text-4xl font-black text-[#0B192C] tracking-tight">
