@@ -58,7 +58,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 mt-8">
+          <div className="flex flex-wrap items-center gap-4 mt-12">
             <button
               onClick={onDonateClick}
               className="group bg-[#D4AF37] hover:bg-[#c49f2b] text-[#0B192C] font-black text-sm px-6 py-3 rounded-full inline-flex items-center gap-3 transition-all duration-200 shadow-md active:scale-95 cursor-pointer"
@@ -72,10 +72,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         </div>
       </div>
 
-      <div className="mt-12 pt-6 border-t border-slate-200 grid grid-cols-2 gap-8">
+      <div className="mt-12 pt-6 border-t border-slate-200 flex justify-center">
         {ABOUT_DATA.stats.map((stat) => (
-          <div key={stat.label} className="flex flex-col">
-            <span className="text-3xl sm:text-4xl font-black text-[#0B192C] tracking-tight">
+          <div key={stat.label} className="flex flex-col items-center text-center">
+            <span className="text-5xl sm:text-6xl font-black text-[#0B192C] tracking-tight">
               {stat.value}
             </span>
             <span className="text-xs sm:text-sm text-slate-500 font-medium mt-1">

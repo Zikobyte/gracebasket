@@ -23,8 +23,7 @@ export const HERO_DATA = {
 export const ABOUT_DATA = {
   badge: "Grace Basket 2026 Mandate",
   stats: [
-    { value: "2,850+", label: "Families Fed to Date" },
-    { value: "100%", label: "Direct Impact on Feeding" },
+    { value: "550", label: "Families Fed to Date" },
   ],
   image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/4d089a14-3f7e-4f64-9e8b-34d333fd83c0.jpg",
   pillars: [
@@ -54,15 +53,15 @@ export const DONATION_TIERS: DonationTier[] = [
     subtitle: "One standard food hamper for one family.",
     amount: "₦30,000",
     families: "1 Family",
-    tags: ["₦30,000", "1 Family Fed"],
+    tags: ["₦30,000"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/f55688ba-b3ea-4c12-99ce-85814259d3ad.jpg",
     description: "Sponsor one family to receive the standard Grace Basket Christmas food hamper.",
     basketContents: [
-      "10kg Premium Parboiled Rice",
-      "5L Vegetable Cooking Oil",
-      "Beans & Legumes Family Pack",
-      "Festive Chicken / Turkey Portion",
-      "Seasoning Spices, Tomatoes & Salt"
+      "2kg Premium Parboiled Rice",
+      "1L Vegetable Cooking Oil",
+      "2kg Beans & Garri each",
+      "2pcs of Spaghetti",
+      "Seasoning, Tomato paste & Salt"
     ]
   },
   {
@@ -72,7 +71,7 @@ export const DONATION_TIERS: DonationTier[] = [
     subtitle: "Five standard food hampers for five families.",
     amount: "₦150,000",
     families: "5 Families",
-    tags: ["₦150,000", "5 Families Fed"],
+    tags: ["₦150,000"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/4d089a14-3f7e-4f64-9e8b-34d333fd83c0.jpg",
     description: "Sponsor five families. Each family receives the same standard Grace Basket Christmas food hamper.",
     basketContents: ["5 Full Food Hampers for 5 Distinct Households"]
@@ -84,7 +83,7 @@ export const DONATION_TIERS: DonationTier[] = [
     subtitle: "Ten standard food hampers for ten families.",
     amount: "₦300,000",
     families: "10 Families",
-    tags: ["₦300,000", "10 Families Fed"],
+    tags: ["₦300,000"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/8611cf08-a028-4bf3-9231-02cdd0c69086.jpg",
     description: "Sponsor ten families. Each family receives the same standard Grace Basket Christmas food hamper.",
     basketContents: ["10 Abundant Christmas Hampers Given"]
@@ -96,7 +95,7 @@ export const DONATION_TIERS: DonationTier[] = [
     subtitle: "Sponsor 20 or more standard food hampers.",
     amount: "₦600,000+",
     families: "20+ Families",
-    tags: ["Community Reach", "Major Partner"],
+    tags: ["Community Reach"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/2232ac83-0295-4d3a-8f02-cb86e3cb00f4.jpg",
     description: "Sponsor 20 or more families. Each family receives the same standard Grace Basket Christmas food hamper.",
     basketContents: ["20 Food Baskets or More"]
@@ -106,9 +105,9 @@ export const DONATION_TIERS: DonationTier[] = [
 
 
 export const BANK_DETAILS: BankAccountDetails = {
-  bankName: "Zenith Bank PLC",
-  accountName: "Grace Basket Project Outreach",
-  accountNumber: "1018923481",
+  bankName: "Providus Unity Bank",
+  accountName: "Global Harvest Church Island",
+  accountNumber: "1309155927",
   sortCode: "057150013",
   reference: "Grace Basket 2026",
 };

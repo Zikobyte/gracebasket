@@ -98,27 +98,6 @@ export const Modal: React.FC<AccountModalProps> = ({
           </div>
         </div>
 
-        {/* Donation Guide */}
-        <div className="p-4 bg-amber-50/90 rounded-2xl border border-[#D4AF37]/30 text-xs text-[#0B192C] mb-6 space-y-1.5">
-          <p className="font-bold text-xs text-[#0B192C] flex items-center gap-1.5">
-            <span>How Your Donation Helps:</span>
-          </p>
-          <div className="grid grid-cols-3 gap-2 pt-1 text-center font-bold text-[11px]">
-            <div className="bg-white p-2 rounded-xl border border-[#D4AF37]/40 shadow-2xs">
-              <div className="text-[#0B192C] font-black">₦30,000</div>
-              <div className="text-slate-500 font-medium text-[10px]">1 Family</div>
-            </div>
-            <div className="bg-white p-2 rounded-xl border border-[#D4AF37]/40 shadow-2xs">
-              <div className="text-[#0B192C] font-black">₦150,000</div>
-              <div className="text-slate-500 font-medium text-[10px]">5 Families</div>
-            </div>
-            <div className="bg-white p-2 rounded-xl border border-[#D4AF37]/40 shadow-2xs">
-              <div className="text-[#0B192C] font-black">₦300,000</div>
-              <div className="text-slate-500 font-medium text-[10px]">10 Families</div>
-            </div>
-          </div>
-        </div>
-
         <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold mb-6">
           <ShieldCheck className="w-4 h-4 shrink-0" />
           <span>Your gift supports Grace Basket’s Christmas food outreach.</span>

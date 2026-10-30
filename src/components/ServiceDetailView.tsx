@@ -1,6 +1,6 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight, CheckCircle2, Heart } from 'lucide-react';
-import { DONATION_TIERS } from '../data';
+import { ArrowLeft, ArrowRight, CheckCircle2, Heart, Landmark } from 'lucide-react';
+import { BANK_DETAILS, DONATION_TIERS } from '../data';
 import { DonationTier } from '../types';
 
 interface ServiceDetailViewProps {
@@ -63,7 +63,7 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-lg">
           <section className="md:col-span-7">
             <h2 className="text-2xl font-black text-[#0B192C] mb-3 tracking-tight">
-              Food Basket Contents
+              Food Basket Content
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6 text-sm sm:text-base">
               Every family receives the same standard Grace Basket Christmas food hamper.
@@ -108,6 +108,31 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
             </div>
           </section>
         </div>
+
+        <section className="mt-8 rounded-3xl bg-[#0B192C] p-6 sm:p-8 text-white border border-[#D4AF37]/40 shadow-xl">
+          <div className="flex items-center gap-2 mb-5">
+            <Landmark className="w-5 h-5 text-[#D4AF37]" />
+            <h2 className="text-xl sm:text-2xl font-black tracking-tight">Bank Transfer Details</h2>
+          </div>
+          <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="border-b border-white/15 pb-3">
+              <dt className="text-xs text-slate-400 mb-1">Bank Name</dt>
+              <dd className="font-bold">{BANK_DETAILS.bankName}</dd>
+            </div>
+            <div className="border-b border-white/15 pb-3">
+              <dt className="text-xs text-slate-400 mb-1">Account Name</dt>
+              <dd className="font-bold text-[#D4AF37]">{BANK_DETAILS.accountName}</dd>
+            </div>
+            <div className="border-b border-white/15 pb-3">
+              <dt className="text-xs text-slate-400 mb-1">Account Number</dt>
+              <dd className="font-mono text-lg font-black tracking-wider">{BANK_DETAILS.accountNumber}</dd>
+            </div>
+            <div className="border-b border-white/15 pb-3">
+              <dt className="text-xs text-slate-400 mb-1">Payment Reference</dt>
+              <dd className="font-semibold">{BANK_DETAILS.reference}</dd>
+            </div>
+          </dl>
+        </section>
       </main>
     </div>
   );

@@ -107,3 +107,38 @@ SECTION 3
 FOOD BASKET sub-page
    * Please replace “Every family receives the same standard Grace Basket Christmas food hamper. Choose a sponsorship option below.” with  “Sponsor one food basket, feed five or ten families, or become a Community Outreach partner by sponsoring 20 or more hampers. Learn where your donation goes below.”
    *      * Please revert to the Initial layout for the sub-page, as it was before the revision. This time, use only one sub-page that details what one food basket contains. You can use the screenshots I have merged in a similar order. If you still have the old version, feel free to use it, and update the copy with the feedback above.
+
+
+  
+
+
+
+
+
+REVISIONS (27th October 2026)
+Please add the account details to the sub-page as shown in the image below.  You can format it to look better. We would simply like the account details to fill that space.
+Please delete ‘s’ from Contents in the sub-page subheading “Food Basket Contents”
+Please replace following:
+      * “10kg Premium Parboiled Rice” with “2kg Premium Parboiled Rice”
+      * “5L Vegetable Cooking Oil” with “1L Vegetable Cooking Oil”
+      * “Seasoning Spice, Tomatoes & Salt” with “Seasoning, Tomato paste & Salt”
+      * “Bean & Legumes Family Pack” with “2kg Beans & Garri each”
+      * “Festive Chicken / Turkey portion” with “2pcs of Spaghetti”
+  
+  
+  
+
+Please delete the ‘how your donation helps’ section from the pop up. The unwanted section has been shaded below.
+Please replace:
+      *  “1018923481” with “1309155927”
+      * “Grace Basket Project Outreach” with “Global Harvest Church Island”
+      * “Zenith Bank PLC” with “Providus Unity Bank”
+  
+  
+
+Please delete “100% Direct impact on Feeding” and replace “2,850+” with “550” in the section below. Make the 550 centralised and slightly larger, since it will be the only number there.
+  
+  
+  
+
+Please delete “1 family fed”, “5 families fed”, “10 families fed” and “major Partner” from the section below. I’ve circled the text that we would like you to delete with blue rings.
