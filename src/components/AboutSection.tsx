@@ -72,13 +72,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         </div>
       </div>
 
-      <div className="mt-12 pt-6 border-t border-slate-200 flex justify-center">
+      <div className="mt-12 pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
         {ABOUT_DATA.stats.map((stat) => (
           <div key={stat.label} className="flex flex-col items-center text-center">
-            <span className="text-5xl sm:text-6xl font-black text-[#0B192C] tracking-tight">
+            <span className="text-6xl sm:text-7xl font-black text-[#0B192C] tracking-tight">
               {stat.value}
             </span>
-            <span className="text-xs sm:text-sm text-slate-500 font-medium mt-1">
+            <span className="max-w-xs text-xs sm:text-sm text-slate-500 font-medium mt-1">
               {stat.label}
             </span>
           </div>

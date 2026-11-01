@@ -24,6 +24,7 @@ export const ABOUT_DATA = {
   badge: "Grace Basket 2026 Mandate",
   stats: [
     { value: "550", label: "Families Fed to Date" },
+    { value: "100%", label: "Direct impact on getting food to families" },
   ],
   image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/4d089a14-3f7e-4f64-9e8b-34d333fd83c0.jpg",
   pillars: [
@@ -52,14 +53,14 @@ export const DONATION_TIERS: DonationTier[] = [
     title: "Feed 1 Family",
     subtitle: "One standard food hamper for one family.",
     amount: "₦30,000",
-    families: "1 Family",
     tags: ["₦30,000"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/f55688ba-b3ea-4c12-99ce-85814259d3ad.jpg",
     description: "Sponsor one family to receive the standard Grace Basket Christmas food hamper.",
     basketContents: [
       "2kg Premium Parboiled Rice",
       "1L Vegetable Cooking Oil",
-      "2kg Beans & Garri each",
+      "2kg Beans",
+      "2kg Garri",
       "2pcs of Spaghetti",
       "Seasoning, Tomato paste & Salt"
     ]
@@ -70,7 +71,6 @@ export const DONATION_TIERS: DonationTier[] = [
     title: "Feed 5 Families",
     subtitle: "Five standard food hampers for five families.",
     amount: "₦150,000",
-    families: "5 Families",
     tags: ["₦150,000"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/4d089a14-3f7e-4f64-9e8b-34d333fd83c0.jpg",
     description: "Sponsor five families. Each family receives the same standard Grace Basket Christmas food hamper.",
@@ -82,7 +82,6 @@ export const DONATION_TIERS: DonationTier[] = [
     title: "Feed 10 Families",
     subtitle: "Ten standard food hampers for ten families.",
     amount: "₦300,000",
-    families: "10 Families",
     tags: ["₦300,000"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/8611cf08-a028-4bf3-9231-02cdd0c69086.jpg",
     description: "Sponsor ten families. Each family receives the same standard Grace Basket Christmas food hamper.",
@@ -94,7 +93,6 @@ export const DONATION_TIERS: DonationTier[] = [
     title: "Community Outreach Partner",
     subtitle: "Sponsor 20 or more standard food hampers.",
     amount: "₦600,000+",
-    families: "20+ Families",
     tags: ["Community Reach"],
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/2232ac83-0295-4d3a-8f02-cb86e3cb00f4.jpg",
     description: "Sponsor 20 or more families. Each family receives the same standard Grace Basket Christmas food hamper.",

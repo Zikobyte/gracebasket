@@ -7,7 +7,6 @@ import { ServiceDetailView } from './components/ServiceDetailView';
 import { Footer } from './components/Footer';
 import { Modal } from './components/Modals';
 import { CustomCursor } from './components/CustomCursor';
-import { DONATION_TIERS } from './data';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('home');
@@ -45,14 +44,10 @@ export default function App() {
 
       {showDonationPackages ? (
         <ServiceDetailView
-          tiers={DONATION_TIERS}
           onBackToHome={() => {
             setShowDonationPackages(false);
             setCurrentTab('home');
           }}
-          onDonateClick={(tier) =>
-            openAccountDetailsModal(`Sponsor ${tier.title}`, tier.amount)
-          }
         />
       ) : (
         <main className="w-full overflow-x-hidden">

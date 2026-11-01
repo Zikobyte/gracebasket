@@ -4,7 +4,6 @@ export interface DonationTier {
   title: string;
   subtitle: string;
   amount: string;
-  families: string;
   tags: string[];
   image: string;
   description: string;

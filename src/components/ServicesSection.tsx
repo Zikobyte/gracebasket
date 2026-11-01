@@ -50,7 +50,7 @@ export const ServicesSection: React.FC<DonationTiersSectionProps> = ({
 
             <div className="absolute bottom-5 left-5 z-20 bg-[#0B192C]/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#D4AF37]/50 text-white text-xs font-bold flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
-              <span>{activeTier.amount} feeds {activeTier.families}</span>
+              <span>{activeTier.amount}</span>
             </div>
           </div>
         </div>
