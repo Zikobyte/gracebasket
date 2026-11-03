@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowLeft, CheckCircle2, Heart, Landmark } from 'lucide-react';
-import { BANK_DETAILS, DONATION_TIERS } from '../data';
+import { BANK_DETAILS, DONATION_TIERS, FOOD_BASKET_IMAGE } from '../data';
 
 interface ServiceDetailViewProps {
   onBackToHome: () => void;
@@ -43,7 +43,7 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
 
         <div className="relative aspect-[16/9] sm:aspect-[16/8.5] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 mb-10 bg-[#0B192C]">
           <img
-            src={DONATION_TIERS[0].image}
+            src={FOOD_BASKET_IMAGE}
             alt="Grace Basket Christmas food hamper"
             className="w-full h-full object-cover object-center filter brightness-[0.98]"
           />

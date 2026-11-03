@@ -46,6 +46,8 @@ export const ABOUT_DATA = {
   ],
 };
 
+export const FOOD_BASKET_IMAGE = "https://kelechieze.wordpress.com/wp-content/uploads/2026/11/food_basket_final_image.jpg";
+
 export const DONATION_TIERS: DonationTier[] = [
   {
     id: "tier-1",
@@ -57,9 +59,9 @@ export const DONATION_TIERS: DonationTier[] = [
     image: "https://kelechieze.wordpress.com/wp-content/uploads/2026/10/f55688ba-b3ea-4c12-99ce-85814259d3ad.jpg",
     description: "Sponsor one family to receive the standard Grace Basket Christmas food hamper.",
     basketContents: [
-      "2kg Premium Parboiled Rice",
+      "4kg Premium Parboiled Rice",
       "1L Vegetable Cooking Oil",
-      "2kg Beans",
+      "1kg Beans",
       "2kg Garri",
       "2pcs of Spaghetti",
       "Seasoning, Tomato paste & Salt"

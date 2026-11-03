@@ -10,7 +10,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
   onDonateClick,
 }) => {
   return (
-    <section id="mandate" className="py-14 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto bg-white">
+    <section id="mandate" className="pt-14 pb-4 sm:pt-20 sm:pb-6 md:pt-24 md:pb-8 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto bg-white">
       {/* 2-Column Main Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         {/* Left Column: Grace Basket Distribution Image with Outreach Badge */}

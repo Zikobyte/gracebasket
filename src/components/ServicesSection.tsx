@@ -13,7 +13,7 @@ export const ServicesSection: React.FC<DonationTiersSectionProps> = ({
   const activeTier = DONATION_TIERS[activeIndex] ?? DONATION_TIERS[0];
 
   return (
-    <section id="donation-tiers" className="py-14 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto bg-white">
+    <section id="donation-tiers" className="pt-4 pb-14 sm:pt-6 sm:pb-20 md:pt-8 md:pb-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto bg-white">
       <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
         <span className="inline-block px-3.5 py-1 rounded-full bg-[#0B192C]/10 border border-[#0B192C]/20 text-[#0B192C] text-xs font-black tracking-wide mb-4">
           How Your Donation Helps
